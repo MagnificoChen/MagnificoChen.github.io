@@ -14,6 +14,7 @@
 | 滤波                  | Filtering               |
 | 图形管线              | Graphics Pipeline       |
 | 硬件管线/实时渲染管线 | Hardware Pipeline       |
+| 滑动平均              | Moving average          |
 | 对象顺序渲染          | Object-order Rendering  |
 | 重建性失真            | reconstruction artifact |
 | 采样                  | Sampling                |

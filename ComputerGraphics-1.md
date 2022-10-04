@@ -387,11 +387,11 @@ $$f(x,y) = 0.$$
 函数 $f(x,y)=0$ 返回一个实数。使得该函数值为 0 的所有点 $(x,y)$ 组成一条曲线。由于 f 对所有(x,y)都有值，所以可以通过曲线形成一一块区域。下面的式子：
 $$f(x,y) = (x-x_c)^2+(y-y_c)^2-r^2=0$$
 写成向量的形式则是：
-$$(\textbf{\rm{p}}-\textbf{\rm{c}})\cdot(\textbf{\rm{p}}-\textbf{\rm{c}}-r^2=0)$$
+$$(\rm\textbf{p}-\textbf{c})\cdot(\textbf{p}-\textbf{c}-r^2=0)$$
 其中 $\rm\textbf{p}=(x,y)$ ,c 是某点 $(x_c,y_c)$ 。
 
 更直观的，那俩平方其实就是距离：
-$$\parallel {\rm\textbf{{p}}-\textbf{c}}\parallel^2-r^2 = 0$$
+$$\parallel {\rm\textbf{p}-\textbf{c}}\parallel^2-r^2 = 0$$
 
 我们更建议你使用向量等式，因为它更符合几何定义，也更直观；另外你还可以在代码中引入向量，让代码更易读，同时产生更少的错误。学会使用向量，刚开始可能有点难，但之后会让你事半功倍。
 

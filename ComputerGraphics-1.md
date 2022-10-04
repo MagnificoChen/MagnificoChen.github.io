@@ -348,11 +348,11 @@ $$\rm{\textbf{u}}=x_a\rm{\textbf{u}}+y_a\rm{\textbf{v}}+z_a\rm{\textbf{w}}$$
 我们建立坐标系的限制条件有时只有一个。比如，限定 z 轴正方向是飞机的飞行方向。所以通过单个向量生成基坐标的步骤如下：
 
 首先取限定向量 w 的单位向量做方向：
-$$\textbf{\rm{w}} = \frac{\textbf{\rm{a}}}{\parallel\textbf{\rm{a}}\parallel}.$$
+$$\rm\textbf{w} = \frac{\textbf{a}}{\parallel\textbf{a}\parallel}.$$
 
-然后找一个任意不共线的向量 $\textbf{\rm{w}}$ ，将他们叉乘取出另外一个轴方向。
+然后找一个任意不共线的向量 $\rm\textbf{w}$ ，将他们叉乘取出另外一个轴方向。
 
-$$\textbf{ \rm {u} } = \frac{\textbf{\rm{t}}\times \textbf{\rm{w}}}{\parallel\textbf{\rm{t}}\times \textbf{\rm{w}}\parallel}.$$
+$$\rm \textbf{u} = \frac{\textbf{t}\times \textbf{w}}{\parallel\textbf{t}\times \textbf{w}\parallel}.$$
 
 如果 t 和 w 共线，那么叉乘向量就是零向量，如果近乎共线，那么坐标轴就会缺少精度。解决这个问题的一种好办法就是，先构造两个相同向量，如 $w=(1/\sqrt{2},-1/\sqrt{2},0)$ ，然后将 0 改成 1，即 $t=(1/\sqrt{2},-1/\sqrt{2},1)$ 。
 

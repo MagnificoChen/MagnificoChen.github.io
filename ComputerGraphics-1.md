@@ -209,10 +209,8 @@ $$
 
 一个有用的方法是给 bug 设置一个“陷阱”。首先，保证你的程序是准确的-在单线程中运行，从固定种子中取数计算；然后，找到哪个三角形或像素有问题，然后在那个地方加上一些代码，让他在出错时才会执行。如，如果你发现位于（126，247）位置上的像素看起来有问题，那么你可以加这一句代码：
 
-$$
-\textbf{\rm{if}}\ (x=126\ and\ y=247)\ \textbf{\rm{then}}\ \\ \newline
- \rm{print(blarg!)}
-$$
+$$\textbf{\rm{if}}\ (x=126\ and\ y=247)\ \textbf{\rm{then}}\ \\ \newline
+ \rm{print(blarg!)}$$
 
 如果你在 print 语句上设置一个断点，那么在你关心的那个像素计算时你就会进入调试模式。同时有些调试器可以不需要你添加代码也能达到同样效果，称作“条件断点”。
 
@@ -354,7 +352,7 @@ $$\textbf{\rm{w}} = \frac{\textbf{\rm{a}}}{\parallel\textbf{\rm{a}}\parallel}.$$
 
 然后找一个任意不共线的向量 $\textbf{\rm{w}}$ ，将他们叉乘取出另外一个轴方向。
 
-$$\textbf{\rm{u}} = \frac{\textbf{\rm{t}}\times \textbf{\rm{w}}}{\parallel\textbf{\rm{t}}\times \textbf{\rm{w}}\parallel}.$$
+$$\textbf{ \rm {u} } = \frac{\textbf{\rm{t}}\times \textbf{\rm{w}}}{\parallel\textbf{\rm{t}}\times \textbf{\rm{w}}\parallel}.$$
 
 如果 t 和 w 共线，那么叉乘向量就是零向量，如果近乎共线，那么坐标轴就会缺少精度。解决这个问题的一种好办法就是，先构造两个相同向量，如 $w=(1/\sqrt{2},-1/\sqrt{2},0)$ ，然后将 0 改成 1，即 $t=(1/\sqrt{2},-1/\sqrt{2},1)$ 。
 

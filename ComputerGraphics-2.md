@@ -1,3 +1,15 @@
+<head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+</head>
+
 # 第六章 变换矩阵
 
 **线性代数的原理可以用来在三维场景中排列对象、使用相机查看对象，并且能让对象显示在屏幕上。像旋转、平移、缩放、投影这样的 _几何变换_ 可以使用矩阵乘法解决，而这章的主题就是实现这些操作用到的 _变换矩阵_ 。**

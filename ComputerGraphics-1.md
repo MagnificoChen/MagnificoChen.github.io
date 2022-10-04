@@ -1,5 +1,7 @@
 <head>
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+</script>
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
             tex2jax: {
@@ -251,7 +253,7 @@ $$a\in S,$$
 $$f:\mathbb{R}\to\mathbb{Z},$$
 可以读作：函数 f 接受实数输入，并把他映射成整数输出。在这里，箭头左边的集合称作**定义域**，右边的集合称作**值域**。程序员可能对下面这种说法更熟悉：函数 f 接收一个实数参数，返回一个整数。所以，下面两种描述是等价的：
 
-$$\textup{integer}\  f(\rm{real}) \gets \rm{eq.} \to f:\mathbb{R}\to\mathbb{Z}.$$
+$$\rm {integer}\  f(\rm{real}) \gets \rm{eq.} \to f:\mathbb{R}\to\mathbb{Z}.$$
 
 所以这种冒号箭头的表达方式可以看作一种编程语法。就这么简单。
 
@@ -288,16 +290,27 @@ $$\textup{integer}\  f(\rm{real}) \gets \rm{eq.} \to f:\mathbb{R}\to\mathbb{Z}.$
 倍角公式、和差角公式：
 
 $\tan:$
+
 $$\tan(\alpha\pm\beta)=\cfrac{\tan\alpha\pm\tan\beta}{1\mp\tan\alpha\tan\beta}$$
+
 $$\tan2\alpha=\cfrac{2\tan\alpha}{1-\tan^2\alpha}$$
+
 $\sin:$
+
 $$\sin(\alpha\pm\beta)=\sin\alpha\cos\beta\pm\cos\alpha\sin\beta$$
+
 $$\sin2\alpha=2\sin\alpha\cos\alpha$$
+
 $$\sin2\alpha=\cfrac{2\tan\alpha}{1+\tan^2\alpha}$$
+
 $\cos:$
+
 $$\cos(\alpha\pm\beta)=\cos\alpha\cos\beta\mp\sin\alpha\sin\beta$$
+
 $$\cos2\alpha=\cos^2\alpha-\sin^2\alpha=2\cos^2\alpha-1=1-2\sin^2\alpha$$
+
 三角形面积公式：
+
 $$S=\frac{1}{4}\sqrt{(a+b+c)(-a+b+c)(a-b+c)(a+b-c)}$$
 
 ## 2.4 向量
@@ -305,22 +318,31 @@ $$S=\frac{1}{4}\sqrt{(a+b+c)(-a+b+c)(a-b+c)(a+b-c)}$$
 ### 2.4.4 向量叉积
 
 向量叉积一般只用于三维向量。我们使用右手定则确定方向，向量的长度和夹角有关：
+
 $$\parallel\textbf{a}\times\textbf{b}\parallel=\parallel\textbf{a}\parallel\parallel\textbf{b}\parallel\sin\phi.$$
 
 ### 2.4.5 规范正交基和坐标系
 
 所有图形程序中，坐标系统都是其核心。坐标系统的核心则是正交基。要想作为正交基，两个二维向量必须垂直且都是单位长度。即：
+
 $$\parallel u\parallel=\parallel v \parallel =1,$$
+
 $$u\cdot v=0.$$
+
 在三维空间，需要满足
+
 $$\parallel u\parallel=\parallel v \parallel =\parallel w \parallel =1,$$
+
 $$u\cdot v=v\cdot w=w\cdot u=0.$$
+
 同时，这个坐标系采用右手系：
+
 $$w=u\times v,$$
 
 请注意，笛卡尔直角坐标系只是很多很多坐标系中的一种。它的特殊之处在于图形程序中的低级（默认）表示都是用该坐标系表示的。因此，基向量 x,y,z 和原点 o 都不是显式存储的，是默认就规定的。全局模型通常存储在规范坐标系中，所以我们又将这个坐标系称为**全局坐标系统**。然而，如果我们想要将原点换成 p 点，正交基换成 u,v,w，那么我们就需要显式地存储这些向量和点。这样的坐标系统叫**参考系**。举个例子：在飞行模拟器中，我们可能就会需要既有一个在原点在机头、顺着飞机方向建立基向量的坐标系，同时又需要一个主要坐标系，主要坐标系一般围绕一个不是飞机的特定物体建立，一般称作**本地坐标系**。
 
 在底层，本地坐标系一般依据规范坐标建立，比如，假设 $a$ 有在 u-v-w 坐标系下有坐标 $(x_a,y_a,z_a)$ ，那么它在规范坐标系下的表示就是：
+
 $$\rm{\textbf{u}}=x_a\rm{\textbf{u}}+y_a\rm{\textbf{v}}+z_a\rm{\textbf{w}}$$
 
 ### 2.4.6 通过单个向量来生成基坐标

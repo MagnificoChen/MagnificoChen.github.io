@@ -1519,7 +1519,7 @@ $$I' = \frac{I}{r^2}$$
 
 综上所述，Blinn-Phong 光照模型如下所示：
 
-$${\rm\textbf{h}}=\frac{{\rm\textbf{v}}+{\rm\textbf{l}}}{\parallel {\rm\textbf{v}} +{\rm\textbf{l}}\parallel}$$
+$${ \rm \textbf{h}}=\frac{{ \rm \textbf{v}}+{\rm \textbf{l}}}{ \parallel {\rm \textbf{v}} +{\rm \textbf{l}} \parallel}$$
 
 $$L = k_dImax(0,{\rm\textbf{n}}\cdot{\rm\textbf{l}})+k_sImax(0,{\rm\textbf{n}}\cdot{\rm\textbf{h}})^p$$
 

@@ -18,8 +18,8 @@
 | 图形管线              | Graphics Pipeline       |
 | 硬件管线/实时渲染管线 | Hardware Pipeline       |
 | 冲激响应/脉冲响应     | impulse response        |
-|低通滤波|lowpass filter
-|
+| 低通滤波              | lowpass filter          |
+| 摩尔纹                | Moire patterns          |
 | 滑动平均              | Moving average          |
 | 对象顺序渲染          | Object-order Rendering  |
 | 过冲                  | overshoot               |

@@ -12,6 +12,7 @@
 | 三次 B 样条滤波       | B-spline cubic filter   |
 | 笛卡尔坐标系          | Cartesian Coordinates   |
 | 卷积                  | Convolution             |
+| 尺度变换特性/膨胀特性 | dilation property       |
 | 狄拉克 Delta 函数     | Dirac Delta function    |
 | 滤波                  | Filtering               |
 | 高斯滤波              | Gaussian Filter         |

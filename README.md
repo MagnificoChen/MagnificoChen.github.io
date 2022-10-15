@@ -31,7 +31,7 @@
 
 第九章到第十章 **信号理论与着色理论**：
 
-[Chapter7-8](./ComputerGraphics-4.md)
+[Chapter9-10](./ComputerGraphics-4.md)
 
 - 信号处理
 - 表面着色

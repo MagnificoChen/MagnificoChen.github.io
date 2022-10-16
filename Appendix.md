@@ -18,6 +18,7 @@
 | 高斯滤波              | Gaussian Filter         |
 | 图形管线              | Graphics Pipeline       |
 | 硬件管线/实时渲染管线 | Hardware Pipeline       |
+| 神奇方法/启发式方法   | Herustic method         |
 | 冲激响应/脉冲响应     | impulse response        |
 | 低通滤波              | lowpass filter          |
 | 摩尔纹                | Moire patterns          |

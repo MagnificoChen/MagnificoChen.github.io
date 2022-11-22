@@ -1,4 +1,4 @@
-# _With Great Respect to **Anton Napolsky** & **Valeriia Ermakova**：_ **_Zlibrary_**
+# With Great Respect to **_Anton Napolsky_** & **_Valeriia Ermakova_**： **_Zlibrary_**
 
 # ComputerGraphics
 

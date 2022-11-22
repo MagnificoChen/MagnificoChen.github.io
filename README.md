@@ -1,3 +1,7 @@
+# **_With Great Respect to Anton Napolsky & Valeriia Ermakova：_**
+
+# **_Zlibrary_**
+
 # ComputerGraphics
 
 ## 尊重原著版权。本翻译不以盈利为目的。

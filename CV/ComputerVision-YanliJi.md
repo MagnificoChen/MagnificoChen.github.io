@@ -274,7 +274,9 @@ $$p_s(s) = p_r(r) \left|\frac{dr}{ds}\right|$$
 
 ![](20.png)
 
-我们分析以下概率分布： $s$ 的函数是 $p_s(s) = p_r(r) \left|\frac{dr}{ds}\right|$ 那么我们有：
+我们分析以下概率分布： $s$ 的函数是 :
+$$p_s(s) = p_r(r) \left|\frac{dr}{ds}\right|$$
+那么我们有：
 
 $$
 \frac{ds}{dr} = \frac{dT(r)}{dr} = (L-1)\frac{d}{dr}\left[\int_{0}^{r}p_r(w)dw\right]  \\

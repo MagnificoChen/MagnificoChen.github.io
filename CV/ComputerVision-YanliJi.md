@@ -288,7 +288,9 @@ p_s(s) = p_r(r)|\frac{dr}{ds}| = p_r(r)\left|\frac{1}{(L-1)p_r(r)}\right| \\
  = \frac{1}{L-1}
 $$
 
-对于离散的值， $p_r(r_k) = \frac{n_k}{MN}$ ， $p_r(r_k)$ 和 $r_k$ 组成的图标就是直方图。离散的直方图均衡化转换是：
+对于离散的值，
+$$p_r(r_k) = \frac{n_k}{MN}$ ， $p_r(r_k)$$
+和 $r_k$ 组成的图标就是直方图。离散的直方图均衡化转换是：
 
 $$
 s_k = T(r_k) = (L-1)\sum_{j=0}^{k} p_r(r_j) = \frac{L-1}{MN}\sum_{j=0}^{k} n_j \\

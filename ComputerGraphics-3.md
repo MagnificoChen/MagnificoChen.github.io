@@ -646,7 +646,7 @@ $$\tan \frac{\theta}{2} = \frac{t}{|n|}$$
   hy+ht_y \\
   hz+ht_z \\
   h \\
-  \end{matrix} \right ]\xrightarrow{\rm homigenize}\left [ \begin{matrix}
+  \end{matrix} \right ]\xrightarrow{\rm homogenize}\left [ \begin{matrix}
   x+t_x \\
   y+t_y \\
   z+t_z \\

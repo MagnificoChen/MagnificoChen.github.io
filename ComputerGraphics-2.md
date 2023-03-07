@@ -1,16 +1,13 @@
 <head>
-    <script src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.2/es5/core.js"></script>
-    <script type="text/x-mathjax-config">
-        MathJax.Hub.Config({
-            tex2jax: {
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-            inlineMath: [["$", "$"]],
-            displayMath: [["$$", "$$"]],
-            processEnvironments: true,
-            processRefs: true,
-            }
-        });
-    </script>
+    <script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+    <strong>MathJax = {
+  tex: {
+    inlineMath: [['$', '$']],
+    displayMath: [['$$', '$$']]
+  }
+};</strong>
     
 </head>
 

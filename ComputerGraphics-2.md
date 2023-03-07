@@ -334,9 +334,9 @@ return true
 
 $$({\rm\textbf{p}}-{\rm\textbf{p}}_1) \cdot{\rm\textbf{n}} = 0$$
 
-我们代入 ${\rm\textbf{p}} = {\rm\textbf{e}}+t{\rm\textbf{d}}$ ，然后化简解出 $t$ ，得
+我们代入 ${\rm\textbf{p}} = {\rm\textbf{e}}+t{\rm\textbf{d}}$ ，然后化简解出 $t$ ，得：
 
-$$t = \frac{({\rm\textbf{p}}_1-{\rm\textbf{e}})\cdot{\rm\textbf{n}}}{{\rm\textbf{d}}\cdot {\rm\textbf{n}}}$$
+$$t = \frac{({\rm\textbf{p}}_1 - {\rm\textbf{e}}) \cdot {\rm\textbf{n}}} {{\rm\textbf{d}} \cdot  {\rm\textbf{n}}}$$
 
 这样我们就也能把 ${\rm\textbf{p}}$ 求出来。如果 ${\rm\textbf{p}}$ 点在多边形内部，那么光线就能与之相交，反之，光线不相交。
 
@@ -980,7 +980,7 @@ $$
     \end{matrix} \right]
 $$
 
-$$ = \rm rotate(31.7\degree) \ scale(2.618,0.382) \ rotate(-31.7\degree)$$
+$$ = \rm rotate(31.7 °) \ scale(2.618,0.382) \ rotate(-31.7°)$$
 
 我们应该记住，这是一个对称矩阵，因为我们是采用对称特征值分解来构造解决这个问题的。
 

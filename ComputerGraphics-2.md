@@ -1,4 +1,4 @@
-<head>
+<!-- <head>
     <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
 </script>
@@ -11,7 +11,7 @@
             }
         });
     </script>
-</head>
+</head> -->
 
 - [第四章 光线追踪](#第四章-光线追踪)
   - [4.1 基础光线追踪算法](#41-基础光线追踪算法)
@@ -448,7 +448,7 @@ $$I' = \frac{I}{r^2}$$
 
 综上所述，Blinn-Phong 光照模型如下所示：
 
-$${ \rm \textbf{h}}=\frac{{ \rm \textbf{v}}+{\rm \textbf{l}}}{ \parallel {\rm \textbf{v}} +{\rm \textbf{l}} \parallel}$$
+$${ \rm \textbf{h}}=\frac{{\rm\textbf{v}}+{\rm\textbf{l}}}{ \parallel{\rm\textbf{v}} + {\rm \textbf{l}} \parallel}$$
 
 $$L = k_dImax(0,{\rm\textbf{n}}\cdot{\rm\textbf{l}})+k_sImax(0,{\rm\textbf{n}}\cdot{\rm\textbf{h}})^p$$
 
@@ -542,10 +542,10 @@ box sphere::bounding-box(){
 ```c++
 function raycolor( ray e + td, real t0, real t1 )
 hit-record rec, srec;
-if (scene → hit(e + td, t0, t1, rec)){
+if (scene -> hit(e + td, t0, t1, rec)){
   p = e +(rec.t)·d
   color c = rec.ka*Ia
-  if (not scene → hit(p + sl, epsilon, ∞, srec)){
+  if (not scene -> hit(p + sl, epsilon, ∞, srec)){
     vector3 h = normalized(normalized(l) + normalized(−d))
     c = c + rec.kd*I*max(0, rec.n · l)+(rec.ks)*I*(rec.n · h)^rec.p
   }

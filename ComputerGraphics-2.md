@@ -221,7 +221,7 @@ $$t = \frac{-{\rm \textbf{d}}\cdot({\rm \textbf{e}}-{\rm \textbf{c}})\pm \sqrt{(
 
 在实际的实现中，你首先应该检查判别式，然后再计算其他项。如果球体只是用于包裹更复杂的物体，当做边界使用，那么我们只需要判断是否和球体有相交，也就是只检查判别式就够了。
 
-我们在 2.5.4 节讨论过，在任意点 ${\rm \textbf{p}}$ 的法向量可以通过梯度 ${\rm \textbf{n}} = 2({\rm \textbf{p}}-{\rm \textbf{c}})$ 得出，而单位向量就是 $\frac{{\rm \textbf{p}}-{\rm \textbf{c}}}{R}$ 。
+我们在 2.5.4 节讨论过，在任意点 ${\rm \textbf{p}}$ 的法向量可以通过梯度 ${\rm \textbf{n}} = 2({\rm \textbf{p}}-{\rm \textbf{c}})$ 得出，而单位向量就是 $\frac{{\rm\textbf{p}}-{\rm\textbf{c}}}{R}$ 。
 
 ### 4.4.2 光线与三角形的相交
 
@@ -326,7 +326,7 @@ $$({\rm\textbf{p}}-{\rm\textbf{p}}_1) \cdot{\rm\textbf{n}} = 0$$
 
 我们代入 ${\rm\textbf{p}} = {\rm\textbf{e}}+t{\rm\textbf{d}}$ ，然后化简解出 $t$ ，得：
 
-$$t = \frac{({\rm\textbf{p}}_1 - {\rm\textbf{e}}) \cdot {\rm\textbf{n}}} {{\rm\textbf{d}} \cdot  {\rm\textbf{n}}}$$
+$$t = \frac{({\rm\textbf{p}}_1-{\rm\textbf{e}})\cdot{\rm\textbf{n}}}{{\rm\textbf{d}}\cdot{\rm\textbf{n}}}$$
 
 这样我们就也能把 ${\rm\textbf{p}}$ 求出来。如果 ${\rm\textbf{p}}$ 点在多边形内部，那么光线就能与之相交，反之，光线不相交。
 

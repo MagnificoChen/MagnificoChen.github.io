@@ -581,7 +581,7 @@ $${\rm\textbf{M}}{\rm\textbf{q}}+t({\rm\textbf{MQ}}-{\rm\textbf{Mq}}) \equiv {\r
 
 因此，这个齐次化的点分布在：
 
-$$\frac{{\rm\textbf{r}}+t(\rm\textbf{R}-\textbf{r})}{w_r+t(w_R-w_r)}$$
+$$\frac{{\rm\textbf{r}}+t(\rm\textbf{R}-\textbf{r}})}{w_r+t(w_R-w_r)}$$
 
 如果我们能把上面这个式子写成下面这样的形式：
 
@@ -922,7 +922,7 @@ $${\rm\textbf{n}} \cot ({\rm\textbf{a}}+t({\rm\textbf{b}}-{\rm\textbf{a}}))+D = 
 
 解出 $t$ ：
 
-$$t = \frac{{\rm\textbf{n}}\cdot {\rm\textbf{a}}+D}{{\rm\textbf{n}}\cdot ({\rm\textbf{a}}-{\rm\textbf{b}})}$$
+$$t = \frac{{\rm\textbf{n}}\cdot {\rm\textbf{a}}+D}{\rm\textbf{n}\cdot (\textbf{a}-\textbf{b})}$$
 
 这样我们就能找到交点，然后将看不到的地方减去。
 

@@ -922,7 +922,7 @@ $${\rm\textbf{n}} \cot ({\rm\textbf{a}}+t({\rm\textbf{b}}-{\rm\textbf{a}}))+D = 
 
 解出 $t$ ：
 
-$$t = \frac{{\rm\textbf{n}\cdot\textbf{a}}+D} { \rm \textbf{n} \cdot (\textbf{a}-\textbf{b})}$$
+$$t = \frac{{\rm\textbf{n}\cdot\textbf{a}}+D} { \rm{ \textbf{n} \cdot (\textbf{a}-\textbf{b})}}$$
 
 这样我们就能找到交点，然后将看不到的地方减去。
 

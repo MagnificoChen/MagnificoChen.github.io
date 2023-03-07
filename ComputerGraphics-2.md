@@ -1,6 +1,6 @@
-<!-- <head>
+<head>
     <script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async>
 </script>
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
@@ -11,7 +11,7 @@
             }
         });
     </script>
-</head> -->
+</head>
 
 - [第四章 光线追踪](#第四章-光线追踪)
   - [4.1 基础光线追踪算法](#41-基础光线追踪算法)

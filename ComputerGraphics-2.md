@@ -1,6 +1,6 @@
 <head>
     <script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.0/es5/latest?tex-svg.js" async>
+  src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.0/es5/tex-chtml.js" async>
 </script>
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({

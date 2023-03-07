@@ -1,5 +1,5 @@
 <head>
-    <script src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.2/es5/a11y/assistive-mml.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.2/es5/core.js"></script>
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
             tex2jax: {

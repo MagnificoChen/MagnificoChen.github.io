@@ -581,7 +581,7 @@ $${\rm\textbf{M}}{\rm\textbf{q}}+t({\rm\textbf{MQ}}-{\rm\textbf{Mq}}) \equiv {\r
 
 因此，这个齐次化的点分布在：
 
-$$\frac{{\rm\textbf{r}}+t(\rm\textbf{R}-\textbf{r}})}{w_r+t(w_R-w_r)}$$
+$$\frac{{\rm\textbf{r}}+t{(\rm\textbf{R}-\textbf{r})}}{w_r+t(w_R-w_r)}$$
 
 如果我们能把上面这个式子写成下面这样的形式：
 

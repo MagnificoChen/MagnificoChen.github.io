@@ -1,16 +1,17 @@
 <head>
-    <script type="text/javascript" async
-  src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js" async>
-</script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.2/es5/a11y/assistive-mml.js"></script>
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
             tex2jax: {
             skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-            inlineMath: [["$", "$"], ["\\(", "\\)"]],
-            displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+            inlineMath: [["$", "$"]],
+            displayMath: [["$$", "$$"]],
+            processEnvironments: true,
+            processRefs: true,
             }
         });
     </script>
+    
 </head>
 
 - [第四章 光线追踪](#第四章-光线追踪)

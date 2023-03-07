@@ -1,4 +1,4 @@
-# With Great Respect to **_Anton Napolsky_** & **_Valeriia Ermakova_**： **_Zlibrary_**
+
 
 计算机视觉：
 [计算机视觉](CV/ComputerVision-YanliJi.md)

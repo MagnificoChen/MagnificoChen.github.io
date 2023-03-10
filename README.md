@@ -41,4 +41,14 @@
 - 信号处理
 - 表面着色
 
-图片将在翻译结束后加上。
+
+# Real-Time Rendering
+
+
+原著：**Real-Time Rendering FOURTH EDITION**,
+
+**_By Tomas Akenine-Möller , Peter Shirley , Eric Haines , Naty Hoffman , Angelo Pesce , Micha l Iwanicki , Sébastien Hillaire_**
+
+[Chapter1-2](./RealTimeRendering-1.md)
+
+第一章到第二章  **前言&图形渲染管线**

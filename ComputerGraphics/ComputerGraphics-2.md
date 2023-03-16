@@ -1195,6 +1195,8 @@ $$
 
 $${\rm\textbf{n}^T}{\rm\textbf{t}} = 0$$
 
+![图 6-17](images/6/6-17.png "当一个法向量被执行了与物体相同的变换之后，新的向量可能就不是新的物体的法向量了，如图中的切变。但是正切向量转换后依然是一个正切向量。")
+
 如果我们将转换后的向量记为 ${\rm\textbf{t}}_M =  {\rm\textbf{Mt}}$ ， ${\rm\textbf{n}}_N =  {\rm\textbf{Nn}}$ ，那么我们的目标是找到矩阵 ${\rm\textbf{N}}$ ，让 ${\rm\textbf{n}}_N^T {\rm\textbf{t}}_M = 0$ 。通过这个方程，我们可以用一些代数方面的小技巧来求解。首先，我们通过 ${\rm\textbf{I}}$ 的妙用，将上面的式子插入一个单位矩阵：
 
 $${\rm\textbf{n}^T}{\rm\textbf{t}} = {\rm\textbf{n}^T}{\rm\textbf{It}}={\rm\textbf{n}^T}{\rm\textbf{M}^{-1}}{\rm\textbf{Mt}} = 0$$

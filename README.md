@@ -41,6 +41,13 @@
 - 信号处理
 - 表面着色
 
+第十一章到第十二章 **纹理映射和图形数据结构**：
+
+[Chapter11-12](./ComputerGraphics/ComputerGraphics-5.md)
+
+- 纹理映射
+- 图形数据结构
+
 
 # Real-Time Rendering
 

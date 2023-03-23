@@ -1,9 +1,7 @@
-
-
 计算机视觉：
 [计算机视觉](CV/ComputerVision-YanliJi.md)
 
-# ComputerGraphics
+# 计算机图形学基础 Fundamentals of Computer Graphics
 
 ## 尊重原著版权。本翻译不以盈利为目的。
 
@@ -49,8 +47,8 @@
 - 图形数据结构
 
 ---
-# Real-Time Rendering
 
+# 实时渲染 Real-Time Rendering
 
 原著：**Real-Time Rendering FOURTH EDITION**,
 
@@ -58,4 +56,4 @@
 
 [Chapter1-2](./RealTimeRendering/RealTimeRendering-1.md)
 
-第一章到第二章  **前言&图形渲染管线**
+第一章到第二章 **前言&图形渲染管线**

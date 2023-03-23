@@ -34,3 +34,4 @@
 | 帐篷函数/线性滤波函数 | Tent function           |
 | 欠采样失真            | undersampling artifact  |
 | 下冲                  | undershoot              |
+| 拼接模式/纹理寻址模式 | Wrapping Mode           |

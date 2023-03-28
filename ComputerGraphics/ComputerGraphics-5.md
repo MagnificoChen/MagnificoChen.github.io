@@ -689,7 +689,7 @@ $k_1$ 和 $k_2$ 取不同值，能生成 [图 11-30] 所示的图像
 
 - **_我该如何在光线追踪中实现置换贴图？_**
 
-  暂时没有理想的实现方法。生成所有三角形并在必要时缓存几何体可以防止内存过载（Pharr&Hanrahan,1996； Pharr,Kolb，Gershbein&Hanrahan,1997）。 当置换函数受到限制时，可以尝试直接与位移表面相交（Patterson,Hoggar&Logie，1991； Heidrich&Seidel,1998； Smits,Shirley&Stark，2000）。
+  暂时没有理想的实现方法。生成所有三角形并在必要时缓存几何体可以防止内存过载（Pharr&Hanrahan,1996； Pharr,Kolb，Gershbein&Hanrahan,1997）。 当置换函数受到限制时，可以尝试直接与位移表面相交（Patterson,Hoggar&Logie,1991； Heidrich&Seidel,1998； Smits,Shirley&Stark,2000）。
 
 - **_为什么我使用纹理的图片看起来不真实?_**
 

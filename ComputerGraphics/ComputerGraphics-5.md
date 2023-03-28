@@ -279,7 +279,13 @@ for all x do
 
 这段代码会渲染出有问题的图像。为了解决问题，让我们思考一下从世界空间 $\rm\textbf{q}$ 到齐次点 $\rm\textbf{r}$ 再到齐次点 $\rm\textbf{s}$ 的过程:
 
-$$\left [ \begin{matrix} x_q \\ y_q \\ z_q \\ 1 \\\end{matrix} \right ] \stackrel{\rm transform}{\longrightarrow} \left [ \begin{matrix} x_r \\ y_r \\ z_r \\ 1 \\\end{matrix} \right ]\stackrel{\rm homogenize}{\longrightarrow} \left [ \begin{matrix} x_r/h_r \\ y_r/h_r \\ z_r/h_r \\ 1 \\\end{matrix} \right ] \equiv \left [ \begin{matrix} x_s \\ y_s \\ z_s \\ 1 \\\end{matrix} \right ]$$
+$$\left [ \begin{matrix} x_q \\ y_q \\ z_q \\ 1 \\\end{matrix} \right ]
+\stackrel{\rm transform}{\longrightarrow} 
+\left [ \begin{matrix} x_r \\ y_r \\ z_r \\ 1 \\\end{matrix} \right ]
+\stackrel{\rm homogenize}{\longrightarrow} 
+\left [ \begin{matrix} x_r/h_r \\ y_r/h_r \\ z_r/h_r \\ 1 \\\end{matrix} \right ] 
+\equiv 
+\left [ \begin{matrix} x_s \\ y_s \\ z_s \\ 1 \\\end{matrix} \right ]$$
 
 处理纹理坐标插值问题最简单的方法是，当我们有两个点 $\rm\textbf{q}$ 和 $\rm\textbf{Q}$ ，都和纹理坐标 $(u,v)$ 相关联的时候，我们需要在图像中沿着 $\rm\textbf{s}$ 和 $\rm\textbf{S}$ 之间的直线生成纹理坐标。如果世界坐标中有一个在 $\rm\textbf{q}$ 和 $\rm\textbf{Q}$ 之间的点 $\rm\textbf{q}'$ ，它被投影到 $\rm\textbf{s}$ 和 $\rm\textbf{S}$ 中的一点 $\rm\textbf{s}'$ ，那么这两个点应该有相同的纹理坐标。
 

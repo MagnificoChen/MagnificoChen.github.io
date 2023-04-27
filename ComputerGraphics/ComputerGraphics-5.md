@@ -16,11 +16,10 @@ MathJax = {
 </head>
 <style>
   .sidebar-widget {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-    height: 200px;
+       float: right;
+    margin: 20px;
+    padding: 10px;
+    right: 100px;
     background-color: #f1f1f1;
   }
 

@@ -15,6 +15,8 @@ MathJax = {
 </script>
 </head>
 
+
+
 # _Intersection-free Rigid Body Dynamics_ **无交刚体动力学**
 
 ZACHARY FERGUSON，纽约大学
@@ -345,7 +347,6 @@ while 𝑡𝑠 ≠ ∅ do
 end while
 return false,∞
 ```
-
 ---
 
 **共享最早影响时间。** 与 [Li et al. 2020] 的方法一样，我们使用给定步骤的最早影响时间来计算步长的上限。为了加快这一过程，我们遵循 Redon et al. [2002a] 的建议，在同一步骤中重用以前 CCD 查询中最早的影响时间。这减少了查询的数量，并通过将第 2 行替换为 $𝑡_𝑠←𝑡^{earliest}$ 来实现。

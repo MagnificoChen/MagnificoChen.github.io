@@ -1,6 +1,10 @@
 计算机视觉：
 [计算机视觉](CV/ComputerVision-YanliJi.md)
 
+ACM SIGGRAPH 2023 _Intersection-free Rigid Body Dynamics_ **无交刚体动力学**
+
+[Intersection-free Rigid Body Dynamics](./ComputerGraphics/Intersection-free%20Rigid%20Body%20Dynamics.md)
+
 # 计算机图形学基础 Fundamentals of Computer Graphics
 
 ## 尊重原著版权。本翻译不以盈利为目的。
@@ -47,13 +51,3 @@
 - 图形数据结构
 
 ---
-
-# 实时渲染 Real-Time Rendering
-
-原著：**Real-Time Rendering FOURTH EDITION**,
-
-**_By Tomas Akenine-Möller , Peter Shirley , Eric Haines , Naty Hoffman , Angelo Pesce , Micha l Iwanicki , Sébastien Hillaire_**
-
-[Chapter1-2](./RealTimeRendering/RealTimeRendering-1.md)
-
-第一章到第二章 **前言&图形渲染管线**

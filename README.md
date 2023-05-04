@@ -3,7 +3,7 @@
 
 ACM SIGGRAPH 2023 _Intersection-free Rigid Body Dynamics_ **无交刚体动力学**
 
-[Intersection-free Rigid Body Dynamics](./ComputerGraphics/Intersection-free%20Rigid%20Body%20Dynamics.md)
+[Intersection-free Rigid Body Dynamics](./ComputerGraphics/Intsectn-freeRBdyDyn.md)
 
 # 计算机图形学基础 Fundamentals of Computer Graphics
 

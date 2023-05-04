@@ -1,4 +1,4 @@
-<head>
+﻿<head>
 <script>
 MathJax = {
   tex: {

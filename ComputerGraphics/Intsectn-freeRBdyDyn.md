@@ -127,7 +127,7 @@ DANIELE PANOZZO，纽约大学
 
 [Li et al. 2020] 提出了一种新的方法来处理具有摩擦接触的大形变动力学，将单个时间步减少到无约束的非线性能量的最小化：
 
-$$x^{t+1} = \argmin_{x} E_d(x,x^t,v^t)+B(x,\hat{d})+D(x,\hat{d}) \tag{1}$$
+$$x^{t+1} = \mathop{\arg\min}\limits_{x} E_d(x,x^t,v^t)+B(x,\hat{d})+D(x,\hat{d}) \tag{1}$$
 
 这里 $x^t$ 是节点位置的集合， $v^t$ 是对应的速度， $E_d(x,x^t,v^t)$ 是数值时间步进的增量势（Incremental Potential）， $D$ 是摩擦势， $B$ 是阻力的势。当几何图元超出用户定义的几何精度 $\hat{d}$ 时，后者消失，当两个对象接触时，后者发散。
 
@@ -190,7 +190,7 @@ $$\dot{Q_i}^t = \frac{Q_i^{t}-Q_i^{t-1}}{h} \tag{7}$$
 接下来，为了创建隐式欧拉刚体增量势，我们可以将其转换为相应的变分形式:
 
 $$\tilde{Q}^t_i = Q_i^t+h\dot{Q_i}^t+h^2[\tau_i]J_i^{-1}$$
-$${Q_i^{t+1}} = \argmin_Q \frac{1}{2} {\rm tr}({Q_i}J_i{Q_i}^T)+{\rm tr}({Q_i}J_i{(\tilde{Q}^t_i)}^T) +h^2V(Q) \tag{8}$$
+$${Q_i^{t+1}} = \mathop{\arg\min}\limits_{Q} \frac{1}{2} {\rm tr}({Q_i}J_i{Q_i}^T)+{\rm tr}({Q_i}J_i{(\tilde{Q}^t_i)}^T) +h^2V(Q) \tag{8}$$
 $${\rm s.t.} \ Q^TQ-Id = 0$$
 
 然后，对于我们的整个刚体系统(假设不失一般性，现在没有势能)旋转坐标的隐式欧拉增量势是：
@@ -212,14 +212,14 @@ $$E(Q,q) = E_Q(Q)+E_q(q)$$
 
 现在它完全是用 𝑄 和 𝑞 来定义的，根据我们的策略，当我们希望应用刚体坐标时，可以直接应用于方程(1)中的 $E_𝑑$ 。这给了我们下面的约束优化问题来解决：
 
-$$(𝑄^{𝑡+1}, 𝑞^{𝑡+1}) = \argmin_{Q,q} E(Q,q)+B(\phi (Q,q), \hat{d}) + D(\phi(Q,q)) \tag{11}$$
+$$(𝑄^{𝑡+1}, 𝑞^{𝑡+1}) = \mathop{\arg\min}\limits_{Q,q} E(Q,q)+B(\phi (Q,q), \hat{d}) + D(\phi(Q,q)) \tag{11}$$
 $${\rm s.t.} \ Q^TQ=Id \ ,\ i=\{1,...n\}, \tag{12}$$
 
 其中约束是必要的，以确保最小化 $𝑄^{𝑡+1}$给出旋转矩阵。
 
 **旋转矢量参数化。** 我们的目标仍然是使用无约束优化，以便将其应用于具有线性搜索过滤的牛顿型求解器，从而在保证的情况下能健壮地地最小化增量势。为了用旋转向量 $\theta_i$ 对旋转进行参数化，我们可以直接应用罗德里格斯旋转公式去除方程(12)中的等式约束。这最终可以让我们得到一个无约束的优化问题，从而得到刚体摩擦接触的增量势：
 
-$$(\theta^{t+1},q^{t+1}) = \argmin_{\theta,q}E(\mathcal{R}(\theta),q)+B(\phi(\mathcal{R}(\theta)Q,q)) + D(\phi(\mathcal{R}(\theta),q))$$
+$$(\theta^{t+1},q^{t+1}) = \mathop{\arg\min}\limits_{\theta,q}E(\mathcal{R}(\theta),q)+B(\phi(\mathcal{R}(\theta)Q,q)) + D(\phi(\mathcal{R}(\theta),q))$$
 
 接下来，我们将讨论它现在可以用滤波后的投影牛顿求解器来求解。
 

@@ -591,7 +591,7 @@ $$(\rm \textbf{p}- \rm \textbf{a})\ \cdot \rm \textbf{n}= 0$$
 $$\rm \textbf{n}=(\rm \textbf{b}- \rm \textbf{a})\times (\rm \textbf{c}- \rm \textbf{a})$$
 
 所以隐式平面的方程也可以得出来：
-$$(\rm \textbf{p}-\rm \textbf{a})\cdot(\rm \textbf{b}- \rm \textbf{a})\times (\rm \textbf{c}- \rm \textbf{a}) = 0$$
+$$(\rm \textbf{p}-\rm \textbf{a})\cdot((\rm \textbf{b}- \rm \textbf{a})\times (\rm \textbf{c}- \rm \textbf{a})) = 0$$
 
 同样我们来解释一下上面式子的意思。根据**向量混合积**的定义，这个式子的意思是：由 $p-a$, $b-a$, $c-a$ 这三个向量定义的平行六面体的体积为 0。也就是说，他们共面。
 

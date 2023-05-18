@@ -1661,11 +1661,11 @@ $${\rm\textbf{n}}\cdot({\rm\textbf{a}}+t({\rm\textbf{c}}-{\rm\textbf{a}}))+D = 0
 
 这样我们可以解出 $t$ ：
 
-$$t = -\frac{{\rm\textbf{n}} \cdot {\rm\textbf{a}}+D}{{\rm\textbf{n}}\cdot ({\rm\textbf{c}}-{\rm\textbf{a}})}$$
+$$t = -\frac{{\rm\textbf{n}} \cdot {\rm\textbf{a}}+D}{{\rm\textbf{n}}\cdot (\rm\textbf{c}-\textbf{a})}$$
 
 然后通过解出来的 $t=t_A$ ，代回去得到点 ${\rm\textbf{A}}$ ：
 
-$${\rm\textbf{A}} = {\rm\textbf{a}}+t_A({\rm\textbf{c}}-{\rm\textbf{a}})$$
+$${\rm\textbf{A}} = {\rm\textbf{a}}+t_A(\rm\textbf{c}-\textbf{a})$$
 
 点 ${\rm\textbf{B}}$ 也是相同的办法求得。
 

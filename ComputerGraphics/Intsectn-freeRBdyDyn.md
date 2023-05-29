@@ -159,7 +159,7 @@ $$
 
 $$\phi_i(\theta_i,q_i) = \mathcal{R}(\theta_i) \hat{X}_i + q_i \tag{4}$$
 
-在这里，这里，函数 $\mathbb{R}^3 \times \mathbb{R}^3 \to \mathbb{R}^{3\times k_i}$ 用罗德里格斯旋转公式 $\mathcal{R}$ (见式(14)) 将第 𝑖 个体的第 𝑘 个顶点（从局部坐标）映射到世界坐标中（从旋转向量映射到旋转矩阵）。
+在这里，函数 $\mathbb{R}^3 \times \mathbb{R}^3 \to \mathbb{R}^{3\times k_i}$ 用罗德里格斯旋转公式 $\mathcal{R}$ (见式(14)) 将第 𝑖 个体的第 𝑘 个顶点（从局部坐标）映射到世界坐标中（从旋转向量映射到旋转矩阵）。
 
 我们初始化每个模拟，初始配置为所有物体的旋转值为 $\theta^0$ ，平移值为 $𝑞^0$ 。我们需要一个非互穿的起始构型，并且称任何无交集的构型都是有效的。
 
@@ -250,7 +250,6 @@ $$
 \frac{\sin x}{x}  \ \ \ \ \ , {\rm otherwise.}
 \end{aligned}
 \right.
-\tag{3}
 $$
 
 注意，我们使用泰勒级数展开计算接近于零的值(见附录 a.1)。

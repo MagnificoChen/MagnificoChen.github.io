@@ -50,4 +50,9 @@ ACM SIGGRAPH 2023 _Intersection-free Rigid Body Dynamics_ **无交刚体动力�
 - 纹理映射
 - 图形数据结构
 
+
+[Chapter15](./ComputerGraphics/ComputerGraphics-6.md)
+
+- 曲线
+
 ---

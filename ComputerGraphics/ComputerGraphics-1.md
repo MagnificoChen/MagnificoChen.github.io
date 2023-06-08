@@ -640,8 +640,8 @@ $$
 \begin{align*}
 \mathbf{a} \times \mathbf{b} &= (x_a\mathbf{x}+y_a\mathbf{y}+z_a\mathbf{z}) \times (x_b\mathbf{x}+y_b\mathbf{y}+z_b\mathbf{z}) \\
 &= x_ax_b\mathbf{x}\times \mathbf{x} + x_ay_b\mathbf{x}\times \mathbf{y}+ x_az_b\mathbf{x}\times \mathbf{z} \\
-&\;&+y_ax_b\mathbf{y}\times \mathbf{x}+y_ay_b\mathbf{y}\times \mathbf{y}+y_az_b\mathbf{y}\times \mathbf{z} \\
-&\;&+z_ax_b\mathbf{z}\times \mathbf{x}+z_ay_b\mathbf{z}\times \mathbf{y}+z_az_b\mathbf{z}\times \mathbf{z} \\
+&+y_ax_b\mathbf{y}\times \mathbf{x}+y_ay_b\mathbf{y}\times \mathbf{y}+y_az_b\mathbf{y}\times \mathbf{z} \\
+&+z_ax_b\mathbf{z}\times \mathbf{x}+z_ay_b\mathbf{z}\times \mathbf{y}+z_az_b\mathbf{z}\times \mathbf{z} \\
 
 & = (y_az_b-z_ay_b)\mathbf{x} +(z_ax_b-x_az_b)\mathbf{y}+(x_ay_b-y_ax_b)\mathbf{z} \tag{2.7}
 

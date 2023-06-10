@@ -188,10 +188,15 @@ $$(x,y,z) \mapsto \left(\frac{x}{z} , \frac{y}{z} \right).$$
 立方体贴图存在一个问题，那就是如何在六个面上定义 u 和 v 方向，而这需要一个约定俗成的规矩。选择不同的规定会影响纹理的内容，所以引入一个通用的规矩很重要。由于立方体贴图通常是用在从立方体内部看向六个面，纹理是在立方体的内部，所以我们通常约定，把 $u$ 和 $v$ 调整为从里面看 $u$ 相对于 $v$ 是时针方向。 **OpenGL** 采用下面的约定：
 
 $$\phi_{-x}(x,y,z) = \frac{1}{2} [1+(+z,-y)/\lvert x \rvert]$$
+
 $$\phi_{+x}(x,y,z) = \frac{1}{2} [1+(-z,-y)/\lvert x \rvert]$$
+
 $$\phi_{-y}(x,y,z) = \frac{1}{2} [1+(+x,-z)/\lvert y \rvert]$$
+
 $$\phi_{+y}(x,y,z) = \frac{1}{2} [1+(+x,+z)/\lvert y \rvert]$$
+
 $$\phi_{-z}(x,y,z) = \frac{1}{2} [1+(-x,-y)/\lvert z \rvert]$$
+
 $$\phi_{+z}(x,y,z) = \frac{1}{2} [1+(+x,-y)/\lvert z \rvert]$$
 
 其中，下标表示每个投影对应于立方体的哪个面。例如， $φ_{−x}$ 表示在映射到 $x = +1$ 这个面的点。你可以观察绝对值最大的坐标，来判断一个点投影到了哪个面:例如，如果 $\lvert x \rvert > \lvert y \rvert$ 和 $\lvert x \rvert > \lvert z \rvert$ 也就是 $x$ 的绝对值最大，那么这个点就投影到了 $+x$ 面或 $-x$ 面，按 $x$ 的符号而定。

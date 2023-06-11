@@ -160,6 +160,7 @@ $${\rm \textbf{p}}(t)-{\rm \textbf{e}} + t(\rm \textbf{s}-\rm \textbf{e})$$
 在 3.2 节中我们讨论过图像中的像素坐标。为了将 $n_x \times n_y$ 像素的图像塞到大小为 $(r-l)\times(t-b)$ 的矩形中，像素在水平方向上的间隔是 $\frac{(r-l)}{n_x}$ ，垂直方向的间隔是 $\frac{(t-b)}{n_y}$ ，而且边缘周围会有半个像素的空间，以便于像素网格在图像矩形里居中。这意味着光栅图像位置 $(i,j)$ 的像素是：
 
 $$u=l+\frac{(r-l)(i+0.5)}{n_x}$$
+
 $$v=b+\frac{(t-b)(j+0.5)}{n_y}$$
 
 这个坐标 $(u,v)$ 表示的是相对于原点 $\rm \textbf{e}$ 和基向量 $\rm \textbf{u}$、 $\rm \textbf{v}$ 的坐标值。
@@ -257,7 +258,9 @@ $${\rm \textbf{e}}+t{\rm \textbf{d}} = {\rm \textbf{a}}+\beta({\rm \textbf{b}}-{
 为了求解上面方程中的未知数 $t$, $\beta$, $\gamma$，我们将其从向量形式展开成三个坐标的三个方程：
 
 $$x_e+tx_d = x_a+\beta (x_b-x_a)+\gamma(x_c-x_a),$$
+
 $$y_e+ty_d = y_a+\beta (y_b-y_a)+\gamma(y_c-y_a),$$
+
 $$z_e+tz_d = z_a+\beta (z_b-z_a)+\gamma(z_c-z_a),$$
 
 也就可以写成下面的矩阵：
@@ -605,10 +608,15 @@ $$color \  c = c+k_mraycolor({\rm\textbf{p}}+s{\rm\textbf{r}},\epsilon,\infty) $
 指的是这三个向量构成的平行六面体的体积。由此我们引出以下定律：
 
 1. 行列式的行数乘：视为平行四边形的对侧边数乘
+
    $$\vert(k{\rm\textbf{a}}){\rm\textbf{b}}\vert = \vert{\rm\textbf{a}}(k{\rm\textbf{b}}) = k\vert{\rm\textbf{a}}{\rm\textbf{b}}\vert$$
+
 2. 行列式的“高斯消元”：视为对平行四边形的剪切（类似于高相同进行切变）：
+
    $$\vert({\rm\textbf{a}}+k{\rm\textbf{b}}){\rm\textbf{b}}\vert = \vert{\rm\textbf{a}}({\rm\textbf{b}}+k{\rm\textbf{a}})\vert = \vert{\rm\textbf{a}}{\rm\textbf{b}}\vert$$
+
 3. 行列式的某行拆分：
+
    $$\vert{\rm\textbf{a}}({\rm\textbf{b}}+{\rm\textbf{c}})\vert = \vert{\rm\textbf{a}}{\rm\textbf{b}}\vert+\vert{\rm\textbf{a}}{\rm\textbf{c}}\vert$$
 
 ## 5.2 矩阵
@@ -618,25 +626,40 @@ $$color \  c = c+k_mraycolor({\rm\textbf{p}}+s{\rm\textbf{r}},\epsilon,\infty) $
 ### 5.2.1 矩阵算术
 
 1. 矩阵不含交换律：
+
    $${\rm\textbf{A}}{\rm\textbf{B}}\neq {\rm\textbf{BA}}$$
+
 2. 矩阵具有结合律：
+
    $${\rm\textbf{(AB)C}} = {\rm\textbf{A(BC)}}$$
+
 3. 矩阵具有分配律：
+
    $${\rm\textbf{A(B+C) = AB+AC}}$$
 
 ### 5.2.2 矩阵的运算操作
 
 1. 矩阵的逆：
+
    $${\rm\textbf{AA}}^{-1}={\rm\textbf{I}}$$
+
 2. 复合矩阵的逆：
+
    $$({\rm\textbf{AB}})^{-1} = {\rm\textbf{B}}^{-1}{\rm\textbf{A}}^{-1}$$
+
 3. 矩阵的转置：对矩阵的元素而言，有：
+
    $$a_{ij} = a'_{ji}$$
 4. 复合矩阵的转置：
+
    $$({\rm\textbf{AB}^T}) = {\rm\textbf{B}^T}{\rm\textbf{A}^T}$$
+
 5. 复合/变换矩阵的行列式性质：
+
    $$\vert{\rm\textbf{AB}}\vert = \vert{\rm\textbf{A}}\vert\vert{\rm\textbf{B}}\vert$$
+
    $$\vert{\rm\textbf{A}^{-1}}\vert = \frac{1}{\vert{\rm\textbf{A}}\vert}$$
+
    $$\vert{\rm\textbf{A}^T}\vert=\vert{\rm\textbf{A}}\vert$$
 
 ### 5.2.3 矩阵形式的向量运算
@@ -870,11 +893,13 @@ $$
 假设我们想将一个向量 $\rm\textbf{a}$ _逆时针_ 旋转 $\phi$ 度，得到向量 $\rm\textbf{b}$ ，假设向量 $\rm\textbf{a}$ 与 $x$ 轴成 $\alpha$ 度角，长度是 $r=\sqrt{x_a^2+y_a^2}$ 那么我们可以得到极坐标形式：
 
 $$x_a = r\cos\alpha$$
+
 $$y_a = r\sin\alpha$$
 
 由于 $\rm\textbf{b}$ 仅是 $\rm\textbf{a}$ 旋转，所以长度也是 $r$ ，由于是旋转了 $\phi$ 度，所以使用三角函数的加法，能得到：
 
 $$x_b = r\cos(\alpha+\phi) = r\cos\alpha\cos\phi-r\sin\alpha\sin\phi$$
+
 $$y_b = r\sin(\alpha+\phi) = r\sin\alpha\cos\phi+r\cos\alpha\sin\phi$$
 
 ![图 6-5](./images/6/6-5.png "上面公式的几何意义")
@@ -1235,11 +1260,13 @@ $$
 我们一直在研究如何使用矩阵 ${\rm\textbf{M}}$ 来给变换向量。在二维空间中，这些变换的形式为：
 
 $$x' = m_{11}x+m_{12}y $$
+
 $$y' = m*{21}x+m*{22}y $$
 
 但我们不能使用这样的变换来 _移动_ 物体。只能进行缩放和旋转。尤其是原点 $(0,0)$ 在线性变换中永远保持不变。想要移动或平移（Translate）一个物体，使其所有的点都移动相同的量，我们需要下面这样的变换形式：
 
 $$x' = x+x_t $$
+
 $$y' = x+y_t $$
 
 而通过将 $(x,y)$ 左乘一个 $2\times2$ 矩阵并不能实现这样的效果。将平移加到我们的线性变换系统的一个简单方法是将一个平移向量与每个变换矩阵 **关联** _(参见非线性方程组)_ ，让矩阵接管旋转缩放，向量来控制平移。这完全可行，但是使用这种方法的后续管理工作很麻烦，而且进行 **组合变换** 时，它们将不再变得清晰明了。

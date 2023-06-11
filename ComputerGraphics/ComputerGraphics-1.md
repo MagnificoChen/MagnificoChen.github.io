@@ -1211,6 +1211,7 @@ $$\beta = \frac{f_{ac}(x,y)}{f_{ac}(x_b,y_b)}$$
 $$f_{ab} \equiv (y_a-y_b)x+(x_b-x_a)y+x_ay_b-x_by_a=0$$
 
 由于 $f_{ab}(x_c,y_c)$ 是不为 1 的，所以它还能继续优化。两边同除，我们得到：
+
 $$\gamma = \frac{(y_a-y_b)x+(x_b-x_a)y+x_ay_b-x_by_a}{(y_a-y_b)x_c+(x_b-x_a)y_c+x_ay_b-x_by_a}$$
 
 除法的存在会让人担心除零错，但是由于面积不为 0 或者不接近于 0 的三角形，我们不需要担心。同理可得 $\beta$ 的值，然后相减即可：
@@ -1264,13 +1265,17 @@ $$\mathbf{a} \cdot \mathbf{b} = \parallel\mathbf{a}\parallel \ \parallel\mathbf{
 首先，构造不同的法向向量 $\mathbf{n}_a$ 、 $\mathbf{n}_b$ 、 $\mathbf{n}_c$ 。如 $\mathbf{n}_a$ ，是由顶点 $\mathbf{b}$ 、 $\mathbf{c}$ 、 $\mathbf{p}$ 经过上面的求法向量叉乘方程计算得出的。具体如下：
 
 $$\mathbf{n}_a = (\mathbf{c}-\mathbf{b})\times(\mathbf{p}-\mathbf{b})$$
+
 $$\mathbf{n}_b = (\mathbf{a}-\mathbf{c})\times(\mathbf{p}-\mathbf{c})$$
+
 $$\mathbf{n}_c = (\mathbf{b}-\mathbf{a})\times(\mathbf{p}-\mathbf{a})$$
 
 然后通过求 $\cos \phi$ 的方式求出 $\alpha$, $\beta$, $\gamma$：
 
 $$\alpha = \frac{\mathbf{n}\cdot\mathbf{n}_a}{\parallel\mathbf{n}\parallel^2}$$
+
 $$\beta = \frac{\mathbf{n}\cdot\mathbf{n}_b}{\parallel\mathbf{n}\parallel^2}$$
+
 $$\gamma = \frac{\mathbf{n}\cdot\mathbf{n}_c}{\parallel\mathbf{n}\parallel^2}$$
 
 即可算出重心坐标。

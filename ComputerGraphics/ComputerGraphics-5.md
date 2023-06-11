@@ -160,7 +160,7 @@ $$
 
 说人话！另一种说法是，你用球坐标 $(ρ,θ,φ)$ 表示曲面上的点，然后丢掉 $ρ$ 坐标（因为没啥用，我们映射纹理与这个球上有没有凸出来的点没有关系），将 $θ$ 和 $φ$ 分别映射到范围 $[0,1]$ 内，就是一个纹理映射了。这个公式依赖于 **球坐标** ，参见 [2.5.8 节] 。
 
-$$\phi (x,y,z) = ([\pi+{\rm atan2}(y,x)]/2\pi ,[\pi - acos(z/\parallel x \parallel)]/ \pi)$$
+$$\phi (x,y,z) = ([\pi+{\rm atan2}(y,x)]/2\pi ,\ [\pi - acos(z/\parallel x \parallel)]/ \pi)$$
 
 > **atan2** 函数之前提到过，参见 https://baike.baidu.com/item/atan2/10931300
 

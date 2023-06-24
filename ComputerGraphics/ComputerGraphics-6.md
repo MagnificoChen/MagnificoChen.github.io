@@ -359,6 +359,7 @@ $$\mathbf{f}(u) = \mathbf{a}_0 + \mathbf{a}_1u+\mathbf{a}_2u^2,$$
 它的一阶和二阶导数很简单：
 
 $$\mathbf{f}'(u) = \frac{d\mathbf{f}}{du} = \mathbf{a}_1+2\mathbf{a}_2u,$$
+
 $$\mathbf{f}''(u) = \frac{d^2\mathbf{f}}{du^2} = \frac{d\mathbf{f}}{du}' =  2\mathbf{a}_2,$$
 
 更一般地，

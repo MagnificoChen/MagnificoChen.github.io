@@ -12,7 +12,7 @@ MathJax = {
 </script>
 
 <script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-svg.js">
 </script>
 </head>
 
@@ -290,12 +290,12 @@ $$
 上面所说的第一个例子很容易解决，但对于更复杂的例子，将方程 (15-9) 写成以下形式更容易理解：
 
 $$
-\left [ \begin{matrix} \mathbf{p}_0 \\ \mathbf{p}_1 \\ \end{matrix} \right ] = 
+\left [ \begin{matrix} \mathbf{p}_0 \\ \mathbf{p}_1 \\ \end{matrix} \right ] =
 \left [ \begin{matrix} 1 & 0\\ 1 & 1 \\ \end{matrix} \right ]
 \left [ \begin{matrix} \mathbf{a}_0 \\ \mathbf{a}_1 \\ \end{matrix} \right ]
 $$
 
-这样我们就能将上式写成 
+这样我们就能将上式写成
 
 $$\mathbf{p}  = \mathbf{C} \ \mathbf{a} \tag{15.10}$$
 
@@ -305,14 +305,16 @@ $$\mathbf{p}  = \mathbf{C} \ \mathbf{a} \tag{15.10}$$
 
 $$\mathbf{f}(u)  = \mathbf{u} \ \mathbf{B} \ \mathbf{p} = \mathbf{u} \ \mathbf{a}$$
 
-我们可以为曲线的任何形式找到一个基矩阵，只要参数的定义中没有 *非线性参数* 。例如，我们使用线段的长度和角度来定义曲线，那么它的参数就是非线性的。
+我们可以为曲线的任何形式找到一个基矩阵，只要参数的定义中没有 _非线性参数_ 。例如，我们使用线段的长度和角度来定义曲线，那么它的参数就是非线性的。
 
 现在，假设我们要对线段进行参数化，使 $\mathbf{p}_0$ 为中点 $(u = 0.5)$ ， $\mathbf{p}_1$ 为终点 $(u = 1)$ 。为了导出该参数化的基矩阵，我们设置以下的转换：
 
-$$\begin{align*}
+$$
+\begin{align*}
   \mathbf{p}_0 = \mathbf{f}(0.5) &= 1\mathbf{a}_0 + 0.5\mathbf{a}_1 \\
 \mathbf{p}_0 = \mathbf{f}(1) &= 1\mathbf{a}_0 + 1\mathbf{a}_1
-\end{align*}$$
+\end{align*}
+$$
 
 这样
 
@@ -330,12 +332,14 @@ $$\mathbf{B} = \mathbf{C}^{-1} = \left [ \begin{matrix} 2 & -1 \\ -2 & 2 \\ \end
 
 假设我们想用起始点 $(u = 0)$ 、中间点 $(u = 0.5)$ 和终点 $(u = 1)$ 的位置来描述我们的曲线。在 式(15.4) 中输入合适的值：
 
-$$\begin{align*}
-  \mathbf{p}_0 &=& \mathbf{f}(0) &=& &\mathbf{a}_0& + &0^1& &\mathbf{a}_1 + &0^2& 
+$$
+\begin{align*}
+  \mathbf{p}_0 &=& \mathbf{f}(0) &=& &\mathbf{a}_0& + &0^1& &\mathbf{a}_1 + &0^2&
   &\mathbf{a}_2 \\
   \mathbf{p}_1 &=& \mathbf{f}(0.5) &=& &\mathbf{a}_0& + &0.5^1& &\mathbf{a}_1 + &0.5^2& &\mathbf{a}_2 \\
   \mathbf{p}_2 &=& \mathbf{f}(1) &=& &\mathbf{a}_0& + &1^1& &\mathbf{a}_1 + &1^2& &\mathbf{a}_2 \\
-\end{align*}$$
+\end{align*}
+$$
 
 约束矩阵是
 
@@ -358,19 +362,23 @@ $$\mathbf{f}''(u) = \frac{d^2\mathbf{f}}{du^2} = \frac{d\mathbf{f}}{du}' =  2\ma
 
 更一般地，
 
-$$\begin{align*}
+$$
+\begin{align*}
   \mathbf{f}'(u) &= \sum_{i=1}^{n}iu^{i-1}\mathbf{a}_i \\
    \mathbf{f}''(u) &= \sum_{i=2}^{n}i(i-1)u^{i-2}\mathbf{a}_i
-\end{align*}$$
+\end{align*}
+$$
 
 例如，考虑这样一种情况，我们希望通过其中间的位置、一阶导数和二阶导数来指定一条二次曲线段 $(u = 0.5)$ 。
 
-$$\begin{align*}
-  \mathbf{p}_0 &=& \mathbf{f}(0.5) &=& \mathbf{a}_0 + 0.5^1 \ \mathbf{a}_1 + 0.5^2 
+$$
+\begin{align*}
+  \mathbf{p}_0 &=& \mathbf{f}(0.5) &=& \mathbf{a}_0 + 0.5^1 \ \mathbf{a}_1 + 0.5^2
   &\mathbf{a}_2& \\
   \mathbf{p}_1 &=& \mathbf{f}(0.5) &=&   \mathbf{a}_1 + 2 \ 0.5 \ &\mathbf{a}_2& \\
   \mathbf{p}_2 &=& \mathbf{f}(0.5) &=&  + 2 \  &\mathbf{a}_2& \\
-\end{align*}$$
+\end{align*}
+$$
 
 约束矩阵是：
 
@@ -382,38 +390,44 @@ $$\mathbf{B} = \mathbf{C}^{-1} = \left [ \begin{matrix} 1 & -0.5 & 0.125 \\ 0 & 
 
 ### 15.3.4 三次曲线的基矩阵
 
-三次多项式在图形学中很常见 （见 [15.5节] ）。各种形式的三次曲线的推导就像我们在这一节已经看到的推导。我们将再通过一个例子进行练习。
+三次多项式在图形学中很常见 （见 [15.5 节] ）。各种形式的三次曲线的推导就像我们在这一节已经看到的推导。我们将再通过一个例子进行练习。
 
-三次多项式的一种非常有用的形式是 *埃尔米特形式* 。
+三次多项式的一种非常有用的形式是 _埃尔米特形式_ 。
 
 > 三次埃尔米特是指使用初始点，初始速度（向量），最终点，最终速度（向量）四个参数来确定的三次多项式函数曲线。
 
 这个曲线的四个控制点是 开始和结束时是位置和一阶导数，即，
 
-$$\begin{align*}
+$$
+\begin{align*}
   \mathbf{p}_0 &=& \mathbf{f}(0) &=& \mathbf{a}_0 + 0^1 \ \mathbf{a}_1 &+& 0^2 \mathbf{a}_2 &+& 0^3 &\mathbf{a}_3&\\
   \mathbf{p}_1 &=& \mathbf{f}'(0) &=&  \mathbf{a}_1 &+& 2 \ 0^1 \ \mathbf{a}_2 &+& 3 \ 0^2 \ &\mathbf{a}_3&\\
   \mathbf{p}_2 &=& \mathbf{f}(1) &=& \mathbf{a}_0 + 1^1 \ \mathbf{a}_1 &+& 1^2 \ \mathbf{a}_2 &+ &1^3 &\mathbf{a}_3&\\
   \mathbf{p}_3 &=& \mathbf{f}'(1) &=& \mathbf{a}_1 &+& 2 \ 1^1  \mathbf{a}_2 &+& 3 \ 1^2 \ &\mathbf{a}_3&\\
-\end{align*}$$
+\end{align*}
+$$
 
 约束矩阵是：
 
-$$\mathbf{C} = \left [ \begin{matrix} 
+$$
+\mathbf{C} = \left [ \begin{matrix}
 1 & 0 & 0 & 0 \\
 0 & 1 & 0 & 0 \\
 1 & 1 & 1 & 1 \\
-0 & 1 & 2 & 3 \\ \end{matrix} \right ],$$
+0 & 1 & 2 & 3 \\ \end{matrix} \right ],
+$$
 
 基矩阵是：
 
-$$\mathbf{B} = \mathbf{C}^{-1} = \left [ \begin{matrix} 
+$$
+\mathbf{B} = \mathbf{C}^{-1} = \left [ \begin{matrix}
 1 & 0 & 0 & 0 \\
 0 & 1 & 0 & 0 \\
 -3 & -2 & 3 & -1 \\
-2 & 1 & -2 & 1 \\ \end{matrix} \right ],$$
+2 & 1 & -2 & 1 \\ \end{matrix} \right ],
+$$
 
-我们将在 [15.5.2节] 讨论 *三次埃尔米特样条* 。
+我们将在 [15.5.2 节] 讨论 _三次埃尔米特样条_ 。
 
 ### 15.3.5 混合函数
 
@@ -425,7 +439,7 @@ $$\mathbf{b}(u) = \mathbf{u} \ \mathbf{B}$$
 
 $$\mathbf{f}(u) = \sum_{i=0}^{n} \mathbf{b}_i(u)\mathbf{p}_i \tag{15.11}$$
 
-要注意，对于选定的 $u$ 值，式(15.11) 始终是一个 *线性方程* ，它让控制点能够 *线性混合* （即加权平均）。无论多项式在 $\mathbf{b}_i$ 函数内部是啥样，它都是一个线性函数。
+要注意，对于选定的 $u$ 值，式(15.11) 始终是一个 _线性方程_ ，它让控制点能够 _线性混合_ （即加权平均）。无论多项式在 $\mathbf{b}_i$ 函数内部是啥样，它都是一个线性函数。
 
 混合函数为描述曲线提供了一个很好的抽象。任何类型的曲线都可以表示为其控制点的线性组合，这些权重就是自由参数组成的函数。
 
@@ -441,6 +455,6 @@ $$\mathbf{f}(t) = \sum_{i=0}^{n} \mathbf{p}_ib_i(t).$$
 
 $$b_i = \prod_{j=0,j \neq i}^{n} \frac{x-t_j}{t_i-t_j} \tag{15.12}$$
 
-有比拉格朗日形式（参见De Boor(1978)）更有效的计算方式来表达插值基函数。
+有比拉格朗日形式（参见 De Boor(1978)）更有效的计算方式来表达插值基函数。
 
-**总结：** 插值多项式让我们能够定义一组点的插值曲线。 [图15-3] 显示了一些示例。虽然理论上可以创建一个多项式来插值任意数量的点，但我们很少使用高阶多项式来表示计算机图形学中的曲线，这样求解会比较困难。相反，我们更喜欢使用样条（分段多项式函数）进行插值。 [15.5.3节] 将讨论其中的一些原因。
+**总结：** 插值多项式让我们能够定义一组点的插值曲线。 [图 15-3] 显示了一些示例。虽然理论上可以创建一个多项式来插值任意数量的点，但我们很少使用高阶多项式来表示计算机图形学中的曲线，这样求解会比较困难。相反，我们更喜欢使用样条（分段多项式函数）进行插值。 [15.5.3 节] 将讨论其中的一些原因。

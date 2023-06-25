@@ -24,6 +24,20 @@ MathJax = {
 
 > 课程主页：[原始主页](http://brickisland.net/DDGSpring2020/) 、 [带翻译课程 On Bilibili](https://www.bilibili.com/video/BV1Ae411x75n/?p=1&vd_source=b96a639b598f021856a4f2c94799ab28)
 
+- [CS 15-458/858: Discrete Differential Geometry by Keenan Crane](#cs-15-458858-discrete-differential-geometry-by-keenan-crane)
+- [离散微分几何 by Keenan Crane](#离散微分几何-by-keenan-crane)
+- [第一节 Overview](#第一节-overview)
+  - [1. 微分几何基础](#1-微分几何基础)
+    - [平面上的曲线](#平面上的曲线)
+      - [**参数化曲线**](#参数化曲线)
+      - [**离散的曲线**](#离散的曲线)
+      - [**曲线的切线**](#曲线的切线)
+      - [**曲线的法线**](#曲线的法线)
+      - [**曲线的曲率**](#曲线的曲率)
+      - [从连续到离散](#从连续到离散)
+      - [曲率流](#曲率流)
+  - [课程设置](#课程设置)
+
 # 第一节 Overview
 
 ## 1. 微分几何基础

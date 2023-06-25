@@ -10,9 +10,15 @@ ACM SIGGRAPH 2023 _Intersection-free Rigid Body Dynamics_ **无交刚体动力�
 
 **CS 15-458/858: Discrete Differential Geometry *by Keenan Crane***
 
-[Chapter 1-?](./ComputerGraphics/DDG-1.md)
+[Lecture 1](./ComputerGraphics/DDG-1.md)
 
+- 总览 Overview
 - 微分几何基础
+
+[Lecture 2](./ComputerGraphics/DDG-2.md)
+
+- 拓扑学基础
+- 单纯形/单纯复形
 
 
 # 计算机图形学基础 Fundamentals of Computer Graphics

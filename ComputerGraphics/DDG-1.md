@@ -12,7 +12,7 @@ MathJax = {
 </script>
 
 <script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.0/es5/tex-chtml.js">
+  src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.0/es5/tex-chtml-full.js">
 </script>
 </head>
 
@@ -52,7 +52,7 @@ MathJax = {
 
 $$\gamma : [0,L] \to \mathbb{R}^2$$
 
-![图 1-1](./images/DDG-1/1-1.png)
+![图 1-1](./ddg-images/DDG-1/1-1.png)
 
 \*：这里需要一些条件，如 _连续_ 、 _可微_ 、 _光滑_ 等
 
@@ -60,7 +60,7 @@ $$\gamma : [0,L] \to \mathbb{R}^2$$
 
 $$\gamma :[0,2\pi) \to \mathbb{R}^2 ; s \mapsto (\cos (s), \sin (s))$$
 
-![图 1-1](./images/DDG-1/1-2.png)
+![图 1-1](./ddg-images/DDG-1/1-2.png)
 
 #### **离散的曲线**
 
@@ -137,7 +137,7 @@ $$\kappa = \langle \mathcal{J}\frac{d}{ds} \gamma,  \frac{d^2}{ds^2} \gamma \ran
 
 考虑下面的这个例子：我们将形状边界的曲线曲率进行积分。
 
-![图 1-1](./images/DDG-1/1-3.png)
+![图 1-1](./ddg-images/DDG-1/1-3.png)
 
 对于一个有 $k$ 个孔的图形，当我们对曲率进行积分，我们会发现：
 
@@ -159,7 +159,7 @@ $$\int_{a}^{b} \kappa(s)ds = \int_{a}^{b} \frac{d}{ds} \varphi(s) ds =  \varphi(
 
 > 实际上，曲率有多种定义方式。包括：旋转角度的变化量、长度变化量、斯坦纳公式、内切圆等多种定义方法，在连续的情况下，他们都能计算出正确的曲率值。但是在离散情况下，他们计算出的曲率各不相同，且各有特点。在不同的情况下，选择不同的计算方式，记得灵活多变。
 
-![图 1-1](./images/DDG-1/1-4.png)
+![图 1-1](./ddg-images/DDG-1/1-4.png)
 
 这让我们发现，对于离散的情况，我们更愿意考虑小段的 **积分** ，而不是离散的点值。
 
@@ -171,7 +171,7 @@ $$\int_{a}^{b} \kappa(s)ds = \int_{a}^{b} \frac{d}{ds} \varphi(s) ds =  \varphi(
 
 $$\frac{d}{ds} \gamma (s,t) = \kappa (s,t) N(s,t)$$
 
-![图 1-1](./images/DDG-1/1-5.png)
+![图 1-1](./ddg-images/DDG-1/1-5.png)
 
 这样处理有几个好处，这些好处我们希望在离散情况也得以保留：
 

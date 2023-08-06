@@ -1018,4 +1018,18 @@ $$
 \end{align*}
 $$
 
-这个方程被称为 **_Cox-de Boor 递归式_** 。它可以用来递归计算B样条某处的值。不过，它更常用于使用代数的方法来推导基函数之类的方程，如 [式 15.17] 或 [式 15.18] 。
+$$
+\begin{align*}
+ b_{i,1,\mathbf{t}} &= \left\{
+  \begin{aligned}
+    &1 \ \ \ \  &&{\rm if} \ \  \mathbf{t}_i \leq t \leq \mathbf{t}_{i+1} \\
+    &0  &&{\rm otherwise.} \\
+  \end{aligned}
+  \right.\tag{15.19} \\
+
+ b_{i,k,\mathbf{t}} &= \frac{t-\mathbf{t}_i}{\mathbf{t}_{i+k-1} - \mathbf{t}_i} b_{i,k-1}(t)+\frac{\mathbf{t}_{i+k}-t}{\mathbf{t}_{i+k} - \mathbf{t}_{i+1}} b_{i,k-1}(t). \tag{15.20}
+
+\end{align*}
+$$
+
+这个方程被称为 **_Cox-de Boor 递归式_** 。它可以用来递归计算 B 样条某处的值。不过，它更常用于使用代数的方法来推导基函数之类的方程，如 [式 15.17] 或 [式 15.18] 。

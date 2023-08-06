@@ -1005,7 +1005,7 @@ B 样条的一个很好的特性是：只要 $k>1$ ，我们都能定义出一�
 现在我们终于可以讲讲定义 B 样条的一般方法了。给定控制点数 $n$ 、B 样条参数 $k$ 和结点向量 $t$ （向量长度是 $n+k$ ），下面的递归方程定义了 B 样条：
 
 $$
-\begin{alignat*}{1}
+\begin{align*}
  b_{i,1,\mathbf{t}} &= \left\{
   \begin{align*}
     &1 \ \ \ \  &&{\rm if} \ \  \mathbf{t}_i \leq t \leq \mathbf{t}_{i+1} \\
@@ -1015,7 +1015,7 @@ $$
 
  b_{i,k,\mathbf{t}} &= \frac{t-\mathbf{t}_i}{\mathbf{t}_{i+k-1} - \mathbf{t}_i} b_{i,k-1}(t)+\frac{\mathbf{t}_{i+k}-t}{\mathbf{t}_{i+k} - \mathbf{t}_{i+1}} b_{i,k-1}(t). \tag{15.20}
 
-\end{alignat*}
+\end{align*}
 $$
 
-这个方程被称为 **_Cox-de Boor 递归式_** 。它可以用来递归计算 B 样条某处的值。然而，它更常应用于使用代数的方法来推导基函数之类的方程，如 [式 15.17] 或 [式 15.18] 。
+这个方程被称为 **_Cox-de Boor 递归式_** 。它可以用来递归计算 B 样条某处的值。不过，它更常用于使用代数的方法来推导基函数之类的方程，如 [式 15.17] 或 [式 15.18] 。

@@ -1004,11 +1004,11 @@ B样条的一个很好的特性是：只要 $k>1$ ，我们都能定义出一个
 
 $$\begin{alignat*}{1}
  b_{i,1,\mathbf{t}} &= \left\{
-  \begin{alignat*}{3}
+  \begin{alignat*}{2}
     &1 \ \ \ \  &&{\rm if} \ \  \mathbf{t}_i \leq t \leq \mathbf{t}_{i+1} \\
     &0  &&{\rm otherwise.} \\
   \end{alignat*}
-\right.\tag{15.19} \\
+  \right.\tag{15.19} \\
 
  b_{i,k,\mathbf{t}} &= \frac{t-\mathbf{t}_i}{\mathbf{t}_{i+k-1} - \mathbf{t}_i} b_{i,k-1}(t)+\frac{\mathbf{t}_{i+k}-t}{\mathbf{t}_{i+k} - \mathbf{t}_{i+1}} b_{i,k-1}(t). \tag{15.20}
 

@@ -5,6 +5,10 @@ ACM SIGGRAPH 2023 _Intersection-free Rigid Body Dynamics_ **无交刚体动力�
 
 [Intersection-free Rigid Body Dynamics](./ComputerGraphics/Intsectn-freeRBdyDyn.html)
 
+## 每个软件开发人员都必须要了解的 Unicode 和 字符集 知识
+
+[每个软件开发人员都必须要了解的 Unicode 和 字符集 知识](./ComputerGraphics/StringsAndEncodings.md)
+
 
 # 离散微分几何（更新中）
 

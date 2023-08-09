@@ -319,14 +319,14 @@ $$\mathbf{f}(u) = \mathbf{u} \cdot \mathbf{a} \tag{15.8}$$
 
 $$\mathbf{p}_0 = \mathbf{f}(0) = [1 \ 0 ] \cdot [\mathbf{a}_0 \ \mathbf{a}_1]$$
 
-$$\mathbf{p}_0 = \mathbf{f}(1) = [1 \ 1 ] \cdot [\mathbf{a}_0 \ \mathbf{a}_1] \tag{15.9}$$
+$$\mathbf{p}_1 = \mathbf{f}(1) = [1 \ 1 ] \cdot [\mathbf{a}_0 \ \mathbf{a}_1] \tag{15.9}$$
 
 我们可以解出 $\mathbf{a}_0$ 和 $\mathbf{a}_1$ 的方程：
 
 $$
 \begin{align*}
   \mathbf{a}_0 &= \mathbf{p}_0 \\
-\mathbf{a}_0 &= \mathbf{p}_1-\mathbf{p}_0
+\mathbf{a}_1 &= \mathbf{p}_1-\mathbf{p}_0
 \end{align*}
 $$
 
@@ -357,7 +357,7 @@ $$\mathbf{f}(u)  = \mathbf{u} \ \mathbf{B} \ \mathbf{p} = \mathbf{u} \ \mathbf{a
 $$
 \begin{align*}
   \mathbf{p}_0 = \mathbf{f}(0.5) &= 1\mathbf{a}_0 + 0.5\mathbf{a}_1 \\
-\mathbf{p}_0 = \mathbf{f}(1) &= 1\mathbf{a}_0 + 1\mathbf{a}_1
+\mathbf{p}_1 = \mathbf{f}(1) &= 1\mathbf{a}_0 + 1\mathbf{a}_1
 \end{align*}
 $$
 

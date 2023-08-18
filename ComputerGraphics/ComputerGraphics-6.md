@@ -1051,7 +1051,7 @@ $$
   \end{aligned}
   \right.\tag{15.19} \\
 
- b_{i,k,\mathbf{t}} &= \frac{t-\mathbf{t}_i}{\mathbf{t}_{i+k-1} - \mathbf{t}_i} b_{i,k-1}(t)+\frac{\mathbf{t}_{i+k}-t}{\mathbf{t}_{i+k} - \mathbf{t}_{i+1}} b_{i,k-1}(t). \tag{15.20}
+ b_{i,k,\mathbf{t}} &= \frac{t-\mathbf{t}_i}{\mathbf{t}_{i+k-1} - \mathbf{t}_i} b_{i,k-1}(t)+\frac{\mathbf{t}_{i+k}-t}{\mathbf{t}_{i+k} - \mathbf{t}_{i+1}} b_{i+1,k-1}(t). \tag{15.20}
 
 \end{align*}
 $$

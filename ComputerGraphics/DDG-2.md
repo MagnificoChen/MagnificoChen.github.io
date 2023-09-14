@@ -70,7 +70,7 @@ $$\mathbf{p}(t) \coloneqq (1-t)\mathbf{a} + t\mathbf{b}, t\in [0,1]$$
 
 同理，在 k-单纯形 中，写作：
 
-$$\sigma = \left\{ \sum_{i=0}^{k} t\_i \mathbf{p}\_i \middle | \sum\_{i=0}^{k}t_i = 1, t\_i \geq 0 \ \forall i \right\}$$
+$$\sigma = \left\{ \sum\_{i=0}^{k} t\_i \mathbf{p}\_i \middle | \sum\_{i=0}^{k}t_i = 1, t\_i \geq 0 \ \forall i \right\}$$
 
 **重心坐标** 是 上式中的 $t_i$ 。
 

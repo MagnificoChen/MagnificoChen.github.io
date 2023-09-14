@@ -52,7 +52,7 @@ MathJax = {
 
 #### **仿射独立** Affine Independence
 
-**定义** ：对于一系列 **点** $\mathbf{p}_0,\mathbf{p}_1,\dots \mathbf{p}_n$ ，如果这些向量 $\mathbf{v}_i \coloneqq \mathbf{p}_i - \mathbf{p}_0$ 是线性无关的，那么称这些点 **仿射独立**
+**定义** ：对于一系列 **点** $\mathbf{p}\_0,\mathbf{p}\_1,\dots \mathbf{p}\_n$ ，如果这些向量 $\mathbf{v}\_i \coloneqq \mathbf{p}\_i - \mathbf{p}\_0$ 是线性无关的，那么称这些点 **仿射独立**
 
 ![图 2-1](./ddg-images/DDG-2/2-6.png)
 

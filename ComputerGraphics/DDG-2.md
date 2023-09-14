@@ -48,7 +48,7 @@ MathJax = {
 
 #### **线性无关** Linear Independence
 
-**定义** ：对于一系列向量 $\mathbf{v}_1,\mathbf{v}_2,\dots \mathbf{v}_n,$ 它们是 **线性无关** 的当且仅当它们中的每一个向量都 **不能** 表示为其他向量的组合。也就是，找不到一系列的系数 $a_1,a_2,\dots a_n \in \mathbb{R}$ ，使 $\mathbf{v}_j = \sum_{i \neq j} a_i \mathbf{v}_i$ 。
+**定义** ：对于一系列向量 $\mathbf{v}_1,\mathbf{v}_2,\dots \mathbf{v}_n,$ 它们是 **线性无关** 的当且仅当它们中的每一个向量都 **不能** 表示为其他向量的组合。也就是，找不到一系列的系数 $a_1,a_2,\dots a_n \in \mathbb{R}$ ，使 $\mathbf{v}\_j = \sum\_{i \neq j} a\_i \mathbf{v}\_i$ 。
 
 #### **仿射独立** Affine Independence
 
@@ -70,7 +70,7 @@ $$\mathbf{p}(t) \coloneqq (1-t)\mathbf{a} + t\mathbf{b}, t\in [0,1]$$
 
 同理，在 k-单纯形 中，写作：
 
-$$\sigma = \left\{ \sum_{i=0}^{k} t_i\mathbf{p}_i \middle | \sum_{i=0}^{k}t_i = 1, t_i \geq 0 \ \forall i \right\}$$
+$$\sigma = \left\{ \sum_{i=0}^{k} t\_i \mathbf{p}\_i \middle | \sum\_{i=0}^{k}t_i = 1, t\_i \geq 0 \ \forall i \right\}$$
 
 **重心坐标** 是 上式中的 $t_i$ 。
 

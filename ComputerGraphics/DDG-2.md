@@ -48,7 +48,7 @@ MathJax = {
 
 #### **线性无关** Linear Independence
 
-**定义** ：对于一系列向量 $\mathbf{v}_1,\mathbf{v}_2,\dots \mathbf{v}_n,$ 它们是 **线性无关** 的当且仅当它们中的每一个向量都 **不能** 表示为其他向量的组合。也就是，找不到一系列的系数 $a_1,a_2,\dots a_n \in \mathbb{R}$ ，使 $\mathbf{v}\_j = \sum\_{i \neq j} a\_i \mathbf{v}\_i$ 。
+**定义** ：对于一系列向量 $\mathbf{v}\_1,\mathbf{v}\_2,\dots \mathbf{v}\_n,$ 它们是 **线性无关** 的当且仅当它们中的每一个向量都 **不能** 表示为其他向量的组合。也就是，找不到一系列的系数 $a_1,a_2,\dots a\_n \in \mathbb{R}$ ，使 $\mathbf{v}\_j = \sum\_{i \neq j} a\_i \mathbf{v}\_i$ 。
 
 #### **仿射独立** Affine Independence
 

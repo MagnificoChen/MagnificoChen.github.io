@@ -35,7 +35,7 @@ DANNY M. KAUFMAN，Adobe 研究所
 
 DANIELE PANOZZO，纽约大学
 
-![图1](./images/Additional/fig-1.png)
+![图1](./cg-images/Additional/fig-1.png)
 
 > 图 1. **扩展锁箱。** 针对 3D 打印设计的复杂锁定机构可以直接用我们的算法进行仿真。当“钥匙”转动时，中心螺旋被旋转，依次拉入五个锁定销。当所有的销子都收回时，底部就可以自由下落了。该算法的无交叉保证使设计的自动测试无需调整仿真参数。©Angus Deveson
 
@@ -75,7 +75,7 @@ DANIELE PANOZZO，纽约大学
 
 追溯到欧拉时期，刚体模型是物理建模和仿真的基本基本要素[Marsden and Ratiu 2013]。
 
-![图2](./images/Additional/fig-2.png)
+![图2](./cg-images/Additional/fig-2.png)
 
 > 图 2. **结构系统。**我们证明了我们的方法对各种机构具有紧密一致性接触的健壮性。上图:活塞附在旋转的圆盘上，静气缸用来约束活塞的运动。中间:一个具有复杂几何形状的车轮旋转平稳，但导致连接车轮上的间歇性运动。底部:一个自行车链连接到一个运动链轮。每个连接通过一个现实生活中的接头组成的滚轮，销，和两个平板来建模。©Okan(自行车链条)，Hampus Andersson(链轮)CC BY。
 
@@ -97,7 +97,7 @@ DANIELE PANOZZO，纽约大学
 
 我们将概述限于弯曲轨迹的连续碰撞检测(CCD)算法，因为我们对刚性运动感兴趣，以及具有最小分离的线性轨迹的 CCD 算法，因为我们的算法需要解决这个子问题。我们参考的是 _Wang_ 等人关于无最小分离线性轨迹 CCD 方法的概述。
 
-![图3](./images/Additional/fig-3.png)
+![图3](./cg-images/Additional/fig-3.png)
 
 > 图 3. 对旋转矢量的轨迹进行插值与传统的螺旋运动有很大的不同。
 
@@ -349,7 +349,7 @@ return false,∞
 
 **共享最早影响时间。** 与 [Li et al. 2020] 的方法一样，我们使用给定步骤的最早影响时间来计算步长的上限。为了加快这一过程，我们遵循 Redon et al. [2002a] 的建议，在同一步骤中重用以前 CCD 查询中最早的影响时间。这减少了查询的数量，并通过将第 2 行替换为 $𝑡_𝑠←𝑡^{earliest}$ 来实现。
 
-![图4](./images/Additional/fig-4.png)
+![图4](./cg-images/Additional/fig-4.png)
 
 > 图 4。**螺栓。** 螺栓在重力作用下在静态螺母内旋转。在没有摩擦的情况下，螺栓能够迅速跟随螺纹并开始旋转。©YSoft be3D under CC BY-SA 3.0
 
@@ -380,7 +380,7 @@ $$\eta_Q = 1-\sqrt{\frac{\sum_k \parallel \hat{Q}_k^{t+1}-Q_k\parallel^2_F}{\sum
 
 并在满足优化平稳性准则时收敛于 $\eta_𝑞>0.999$ 和 $\eta_𝑄>0.999$ [Li et al . 2020]。
 
-![图5](./images/Additional/fig-5.png)
+![图5](./cg-images/Additional/fig-5.png)
 
 > 图 5。**打孔机。** 我们设计了两种不同的打孔机构：一种是松散接合的（上排），另一种是紧密接合的（下排）。通过施加力来提升冲头，我们使用完全刚性的自由度而不是关节体来模拟和测试接头的不同容差。
 
@@ -426,43 +426,43 @@ $$\lambda_{A,q} \leftarrow \lambda_{A,q} - \kappa_{A}\sqrt{m_k}(q_k^i-\hat{q}_k^
 
 刘易斯升降结构是一种有趣的机械装置，依靠静摩擦来提升重物(图 12)。而作为最后的摩擦实验，我们把一个盒子放在一个有四个不同摩擦系数的旋转圆盘上。当圆盘的转速增大时，在 $\mu \neq 1$ 的情况下，箱体失去接触，飞离转盘(图 13)。
 
-![图6-1](./images/Additional/fig-6-1.png)![图6-2](./images/Additional/fig-6-2.png)
+![图6-1](./cg-images/Additional/fig-6-1.png)![图6-2](./cg-images/Additional/fig-6-2.png)
 
 > 图 6。**共维度物体。** IPC 公式允许我们轻松模拟共维度对象。顶部：一个球掉在由一维共维边组成的链网上。底部：一个由不相连的共维平面组成的球和一个点云球互相滚动。接触时，几何图形被锁定，两个球摇摆着来回晃动，最后停止运动。
 
-![图7](./images/Additional/fig-7.png)
+![图7](./cg-images/Additional/fig-7.png)
 
 > 图 7。**滚动硬币。** 一枚硬币在具有摩擦力（ $\mu=0.2$ ）的表面上滚动。当硬币掉落时，只有一个点接触地面，但硬币仍然继续旋转。为了准确捕捉这些高速动态，我们使用了很小的时间步长 $ℎ=10^{−4}s$。
 
-![图8](./images/Additional/fig-8.png)
+![图8](./cg-images/Additional/fig-8.png)
 
 > 图 8。**破坏球。** 一堆共 560 个箱子被一个由一串锁链连接的破坏球击中。
 
-![图9](./images/Additional/fig-9.png)
+![图9](./cg-images/Additional/fig-9.png)
 
 > 图 9。**锚。** 一个沉重的锚固定在一条链上，在重力作用下短暂下落，然后通过将链绕在轴上滚动来升起。可以看见自然的聚集和打结行为。©Animation Anchor Line (anchor) under TurboSquid 3D Model License。
 
-![图10](./images/Additional/fig-10.png)
+![图10](./cg-images/Additional/fig-10.png)
 
 > 图 10。**多维纸牌屋。** 我们设计了 Kaufman et al. [2008] 的标准摩擦基准的协维变体，其中每个卡片仅由两个三角形组成。在被两个立方体撞击之前，卡牌被短暂地允许稳定地静止( $\mu≥0.9$ )。顶部两层坍塌后，但最后一层可以托住立方体，这表明我们有能力快速处理静态和动态摩擦之间的转换。
 
-![图11](./images/Additional/fig-11.png)
+![图11](./cg-images/Additional/fig-11.png)
 
 > 图 11。**拱。** 由 101 个刚性块组成的拱桥在重力作用下由于摩擦力处于平衡状态。
 
-![图12](./images/Additional/fig-12.png)
+![图12](./cg-images/Additional/fig-12.png)
 
 > 图 12。**刘易斯升降机构。** 利用摩擦和几何结构，刘易斯结构能够举起重物。一个金字塔形的碎片被放在楔形碎片之间。当中心块被拉起时，周围的块被压入外部块。中心以 0.5 m/s 的速度运动，其运动系数为: $\mu = 0.3$ ，能够举起 10 倍于其质量的物体。
 
-![图13](./images/Additional/fig-13.png)
+![图13](./cg-images/Additional/fig-13.png)
 
 > 图 13。**转盘。** 一个块被扔在一个加速转台上，设置了四个不同的摩擦系数( $\mu = 0,0.1,0.5,1.0$ )。当 $\mu = 0$ 时，积木落在桌子上，慢慢漂移。当 $\mu = 0。1$ 时，积木很快被桌子接住并甩出。当 $\mu = 0.5$ 时，积木能够坚持更长时间，但最终会滑到边缘并掉下来。当 $\mu = 1$ 时，在整个模拟过程中，积木粘附在表上并保持相对位置不变。
 
-![图14](./images/Additional/fig-14.png)
+![图14](./cg-images/Additional/fig-14.png)
 
 > 图 14。**三维包装。** 基于 Shapeway 的 PA11 材料的公差，我们将 8 个模型装入尺寸为 $290 × 290 × 600 mm$ 的 3D 打印机床中，最小间距为 1mm。插图展示了整个模拟过程中的最小距离，表明我们始终保持目标之间所需的最小距离。©tjhowse, blecheimer, katie Hultgren, Creative Tools, Dustin salings, Brad Pitcher, Andy Lesniak and Tony Buser CC BY。
 
-![图15](./images/Additional/fig-15.png)
+![图15](./cg-images/Additional/fig-15.png)
 
 > 图 15。**可扩展性。** 我们在密集网格链条(底部)上测试弱(左)和强(右)可扩展性。对于弱扩展，我们设置空闲链接的数量等于线程的数量，并绘制运行时间除以单个链接时间的图。对于强扩展，我们使用 64 个链接的链条，并绘制单核时间内的加速图。在每种情况下，我们用灰色绘制理想值。虽然我们的方法从并行化中获得了很大的好处，但我们发现在 16 核之后的收益递减，并且在测试 64 核时几乎没有收益。
 
@@ -498,19 +498,19 @@ Bullet 在单元测试和 Erleben [2018] 测试中表现良好，但在较大时
 
 对于我们的拱形测试（图 11），Bullet 的凸碰撞处理能够达到稳定的平衡，但对于大时间步长（0.01s），块会相交。Bullet 的凹三角网格碰撞处理会出现大量“幽灵”力，导致即使在不同时间步长（ $10^{−2}$ 、 $10^{−3}$ 和 $10^{−4}s$）下，它也会崩溃。使用 MuJoCo、Chrono 和 Houdini 进行测试时，拱形无法支撑自己，因为底部块之间存在大量交叉（测试使用 $ℎ=10^{−2}$ 、$10^{−3}$ 和 $10^{−4}s$）。
 
-![图16](./images/Additional/fig-16.png)
+![图16](./cg-images/Additional/fig-16.png)
 
 > 图 16。**单元测试。** 一组单元测试场景，用于对每种方法的准确性和鲁棒性进行基准测试。我们展示了使用我们的方法的初始配置和结果模拟。
 
-![图17](./images/Additional/fig-17.png)
+![图17](./cg-images/Additional/fig-17.png)
 
 > 图 17。**Erleben 的退化测试用例。** 我们的方法可以很容易地处理 Erleben[2018] 提出的具有挑战性的退化情况。
 
-![图18](./images/Additional/fig-18.png)
+![图18](./cg-images/Additional/fig-18.png)
 
 > 图 18。**高中物理摩擦测试。** 我们执行一个简单的高中物理测试，把一个块在斜面上的斜率为 $26.565◦$ 。当其值为 $\mu≥tan(26.565◦)≈0.5$ 时，摩擦力将抵消重力引起的加速度。我们准确地复制了这一点，表明在 $\mu≥0.49$ 时块滑动，而在 $\mu≥0.5$ 时块不滑动。
 
-![图19](./images/Additional/fig-19.png)
+![图19](./cg-images/Additional/fig-19.png)
 
 > 图 19。**IPC 的比较。** 比较原始的体积，可变形的 IPC 公式和我们的刚体公式的比较。（使用钢材的材料参数：杨氏模量 $E= 200 GPa$ ，泊松比 $\nu≥0.3$ ）©YSoft be3D(screw) CC BY-SA 3.0。
 
